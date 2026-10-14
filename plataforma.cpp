@@ -126,7 +126,7 @@ std::vector<Comentario> cargarComentarios() {
     };
 }
 
-int fechaANumero(const std::string& fecha) {
+int fechaANumero(const std::string& fecha){
     int dia = 0;
     int mes = 0;
     int anio = 0;

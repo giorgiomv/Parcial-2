@@ -57,8 +57,7 @@ int main() {
                      << bajos[i].stock << endl;
             }
             if (bajos.size() == 0) cout << "No hay productos con stock bajo" << endl;
-            system("pause");
-            system("cls");
+
         } else if (opcion == 2) {
             string fecha;
             cout << "Fecha (dd/mm/yyyy): ";
@@ -71,15 +70,13 @@ int main() {
                      << lista[i].fecha << endl;
             }
             if (lista.size() == 0) cout << "No hay comentarios desde esa fecha" << endl;
-            system("pause");
-            system("cls");
+
         } else if (opcion == 3) {
             vector<string> lineas = listarUsuariosFormateados(usuarios);
             for (int i = 0; i < lineas.size(); i++) {
                 cout << lineas[i] << endl;
             }
-            system("pause");
-            system("cls");
+
         } else if (opcion == 4) {
             int idProducto;
             cout << "Id del producto: ";
@@ -93,8 +90,7 @@ int main() {
             } else {
                 cout << "Producto sin stock" << endl;
             }
-            system("pause");
-            system("cls");
+
         } else if (opcion == 5) {
             int posCarrito = -1;
             for (int i = 0; i < carritos.size(); i++) {
@@ -113,8 +109,7 @@ int main() {
                 cout << "Subtotal: " << carritos[posCarrito].subtotal << endl;
                 cout << "Impuestos: " << carritos[posCarrito].impuestos << endl;
             }
-            system("pause");
-            system("cls");
+
         } else if (opcion != 0) {
             cout << "Opcion invalida" << endl;
         }
